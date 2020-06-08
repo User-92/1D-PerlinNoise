@@ -1,0 +1,1 @@
+This is for generating 1d perlin noise with python. You can run the main file, pause it (with a debugger) and call the seed variable to get the seed for the current noise pattern that is being displayed. The seedtesting file is where you can enter a seed into the seed variable and the noise pattern for the seed will appear when run.
