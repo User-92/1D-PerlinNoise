@@ -5,6 +5,8 @@ pygame.init()
 pygame.display.set_caption("Perlin Noise Testing")
 screen = pygame.display.set_mode((500,500),0,32)
 
+#change
+
 def gen_noise_rect(x,y):
     height = noise.pnoise1(x * 0.1, repeat=999999999, base = 2, octaves=2) * 30
     return pygame.Rect(x,y-height,5,5)
