@@ -28,7 +28,7 @@ while True:
 
     for rect in noises:
         pygame.draw.rect(screen, (255,255,255), rect)
-        #test
+        # this is a test to see if everything is working
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
