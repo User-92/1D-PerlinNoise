@@ -28,15 +28,14 @@ def gen_noise(runcount):
 # variables
 run_once = False # This isn't really needed, I just had it here to test
 height = 1
-seed = 0 # Seed counter
+seed = 0 # Input any seed here
 hasnoise = False # used for checking if noise has been generated
 while True:
     screen.fill((0,0,0)) #fill the screen with black
 
     if not run_once:
         noises = gen_noise(seed) # Generates the noise with the function defined above
-        seed += 1 # Adds one to the seed
-        hasnoise = True
+        hasnoise=True
     if hasnoise:
         pygame.draw.lines(screen, [255, 255, 255], False, noises, 2) # Draws the lines for the noise
 
